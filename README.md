@@ -1,10 +1,10 @@
-Multi camera remote for linux
+Multi camera remote for windows, linux, mac and bsd!
 ===================
 
-Control multiple camera at same time.
+Control multiple canon dslr camera at same time.
 
 Based on 
-- libgphoto2
-- qt
-- qtgphotoinfo
-
+- [libgphoto2](http://gphoto.org)
+- [qt](http://qt-project.org)
+- [qtgphotoinfo](https://code.google.com/p/qtgphotoinfo)
+- [QT-Canon](https://github.com/rtadlock/QT-Canon)
