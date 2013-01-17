@@ -17,6 +17,6 @@ UI_HEADER_DIR = tmp/
 UI_SOURCE_DIR = tmp/
 OBJECTS_DIR = tmp/
 RCC_DIR = tmp/
-
+ 
 include("config/local.pro")
 
