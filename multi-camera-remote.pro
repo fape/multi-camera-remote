@@ -1,14 +1,22 @@
-SOURCES += src/main.cpp\
-        src/mainwindow.cpp
+QT += core gui
 
-HEADERS  += src/mainwindow.h
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-FORMS    += form/mainwindow.ui
+TEMPLATE = app
 
-LIBS += -lgphoto2 \
-    -lm \
-    -lgphoto2_port \
-    -ldl
+TARGET = multi-camera-remote
+
+SOURCES +=  src/main.cpp\
+            src/mainwindow.cpp
+
+HEADERS +=  src/mainwindow.h
+
+FORMS   +=  form/mainwindow.ui
+
+LIBS    +=  -lgphoto2 \
+            -lm \
+            -lgphoto2_port \
+            -ldl
 
 # All objects should go into tmp
 MOC_DIR = tmp/
