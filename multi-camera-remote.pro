@@ -13,10 +13,12 @@ HEADERS +=  src/mainwindow.h
 
 FORMS   +=  form/mainwindow.ui
 
-LIBS    +=  -lgphoto2 \
-            -lm \
-            -lgphoto2_port \
-            -ldl
+#LIBS    +=  -lgphoto2 \
+#            -lm \
+#            -lgphoto2_port \
+#            -ldl
+unix:CXXFLAGS += `pkg-config --cflags libgphoto2`
+unix:LIBS += `pkg-config --libs libgphoto2`
 
 # All objects should go into tmp
 MOC_DIR = tmp/
